@@ -21,5 +21,19 @@ Gem::Specification.new do |spec|
   spec.rdoc_options     = "--title", "Vanity #{spec.version}", "--main", "README.rdoc",
                           "--webcvs", "http://github.com/assaf/#{spec.name}"
 
+  spec.add_development_dependency "bundler", "~> 1.3"
+  # Math
+  spec.add_development_dependency "integration"
+  spec.add_development_dependency "rubystats"
+  # Persistence
+  spec.add_development_dependency "redis", ">2.1"
+  spec.add_development_dependency "redis-namespace", ">1.1.0"
+  spec.add_development_dependency "bson_ext"
+  spec.add_development_dependency "mongo"
+  spec.add_development_dependency "mysql"
+  spec.add_development_dependency "sqlite3"
+  # APIs
+  spec.add_development_dependency "garb"
+
   spec.required_ruby_version = ">= 1.8.7"
 end
